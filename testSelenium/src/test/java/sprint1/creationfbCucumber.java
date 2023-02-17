@@ -42,13 +42,15 @@ public class creationfbCucumber {
 	public void saisir_nom() {
 		WebElement nom;
 		nom = navigateur.findElement(By.name(""));
-		
+		nom.sendKeys("testtest");
+
 	}
 
 	@And("Saisir prenom")
 	public void saisir_prenom() {
 		WebElement prenom;
 		prenom = navigateur.findElement(By.name(""));
+		prenom.sendKeys("test");
 
 	}
 
@@ -56,6 +58,7 @@ public class creationfbCucumber {
 	public void saisir_mail() {
 		WebElement mail;
 		mail = navigateur.findElement(By.name(""));
+		mail.sendKeys("test@gmail.com");
 
 	}
 
@@ -63,6 +66,7 @@ public class creationfbCucumber {
 	public void saisir_mail_confirm() {
 		WebElement mailConfirm; 
 		mailConfirm = navigateur.findElement(By.name(""));
+		mailConfirm.sendKeys("test@gmail.com");
 
 	}
 
@@ -70,6 +74,7 @@ public class creationfbCucumber {
 	public void saisir_password() {
 		WebElement password;
 		password = navigateur.findElement(By.xpath(""));
+		password.sendKeys("123");
 
 	}
 
