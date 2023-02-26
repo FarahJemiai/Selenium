@@ -108,11 +108,11 @@ public class creationfbCucumber {
 
 	@Then("compte creer")
 	public void compte_creer() {
-		WebElement profil;
-		profil = navigateur.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span/p"));
+		WebElement verif;
+		verif = navigateur.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span/p"));
 		String message;
-		message = profil.getText();
+		message = verif.getText();
 		System.out.println(message);
-		Assert.assertEquals("Farah", message);
+		Assert.assertEquals("Entrer le code de votre e-mail", message);
 	}
 }
